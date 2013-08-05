@@ -1,6 +1,6 @@
 class Short < ActiveRecord::Base
   attr_accessible :long, :desc
-  attr_accessible :desc
+  attr_accessor :desc
 
   validates :long,
   				:presence => true,
@@ -12,9 +12,10 @@ class Short < ActiveRecord::Base
   		if self.desc.nil?
   			b36_id
   		else
-  			"#{b36_id}"
+  			"#{b36_id}/#{self.desc}"
   		end
   	end
+
   	def b36_id
   		self.id.to_i.to_s(36)
   	end
