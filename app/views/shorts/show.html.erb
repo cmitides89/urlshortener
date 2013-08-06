@@ -1,7 +1,11 @@
-the show pagina
-<p>Here is your shortened url!</p>
-<%= link_to short_url(@short), short_url(@short) %>
-<p>The old URL</p>
-<%= link_to @short.long, @short.long %>
+<center>
+	<div class = "result">
+	
+		<p>Cool, now you can share this with your friends!</p>
+		<%= link_to short_url(@short), short_url(@short) %>
+	</div>
 
-<p><%= link_to 'Make another short url', new_short_path %> </p>
+	<div id="link-for-more">
+		<%= link_to 'Make another link', new_short_path %> 
+	</div>
+</center>

@@ -1,14 +1,29 @@
 // Place all the styles related to the Short controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+html{
+	font-family: Arial, sans-serif;
+}
 body{
-	width:500px;
+	width:50%;
+	height:50%;
+	background:#707070;
+	border:100px solid #286378;
+	border-radius:10px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
 
 }
 #the-form{
 	height:150px;
 	width:400px;
 	border:1px solid black ;
+	border-radius:10px;
 	
 	position: absolute;
 	top: 0;
@@ -17,4 +32,40 @@ body{
 	right: 0;
 
 	margin: auto;
+	background:white;
+	box-shadow: 5px 5px 3px #888888;
+	padding-bottom:8px;
 }
+.extra-form-styling{
+	padding-top: 30px;
+}
+.actions{
+	padding-top:20px;
+	border-style:none;
+}
+.create-button{
+	border-style:none;
+	background-color:#1f4c5c;
+	height:30px;
+	width:100px;
+	box-shadow: 1px 1px 0.5px #888888;
+	color:white;
+}
+.form-field{
+	margin-top:15px;
+	height:20px;
+}
+// the show page 
+
+.result{
+
+}
+#link-for-more{
+	height:50px;
+	width:150px;
+	background-color:white;
+	padding-top:25px;
+	margin-top:15px;
+}
+a{ text-decoration:none; color:#050d0f;; }
+a:hover{color:575757;}
